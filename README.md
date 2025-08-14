@@ -9,10 +9,10 @@
   <h1> WiFiQR - Ultimate QR Code Generator</h1>
   <p><strong>Create stunning QR codes with modern 3D design & glassmorphism effects</strong></p>
   
-  [![GitHub stars](https://img.shields.io/github/stars/yourusername/WiFiQR?style=social)](https://github.com/yourusername/WiFiQR/stargazers)
-  [![GitHub forks](https://img.shields.io/github/forks/yourusername/WiFiQR?style=social)](https://github.com/yourusername/WiFiQR/network/members)
-  [![GitHub issues](https://img.shields.io/github/issues/yourusername/WiFiQR)](https://github.com/yourusername/WiFiQR/issues)
-  [![GitHub license](https://img.shields.io/github/license/yourusername/WiFiQR)](https://github.com/yourusername/WiFiQR/blob/main/LICENSE)
+  [![GitHub stars](https://img.shields.io/github/stars/phucdevz/WiFiQR?style=social)](https://github.com/phucdevz/WiFiQR/stargazers)
+  [![GitHub forks](https://img.shields.io/github/forks/phucdevz/WiFiQR?style=social)](https://github.com/phucdevz/WiFiQR/network/members)
+  [![GitHub issues](https://img.shields.io/github/issues/phucdevz/WiFiQR)](https://github.com/phucdevz/WiFiQR/issues)
+  [![GitHub license](https://img.shields.io/github/license/phucdevz/WiFiQR)](https://github.com/phucdevz/WiFiQR/blob/main/LICENSE)
 </div>
 
 
