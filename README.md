@@ -2,18 +2,21 @@
 
 A modern, responsive web application for generating QR codes with beautiful 3D design and extensive customization options.
 
-## 📸 Project Images
+## Project Images
 
 ### Desktop View
-![Desktop View](https://via.placeholder.com/800x500/667eea/ffffff?text=WiFiQR+Desktop+View)
+![Desktop View](<img width="2818" height="1546" alt="image" src="https://github.com/user-attachments/assets/10b1bac2-cdb3-4eff-a52f-7c0e387edbc4" />
+)
 
 ### Mobile View
-![Mobile View](https://via.placeholder.com/400x700/667eea/ffffff?text=WiFiQR+Mobile+View)
+![Mobile View](<img width="614" height="1346" alt="image" src="https://github.com/user-attachments/assets/7ca45eff-dc8e-49de-a27a-9f60fb9caa23" />
+)
 
 ### Dark Mode
-![Dark Mode](https://via.placeholder.com/800x500/1e293b/ffffff?text=WiFiQR+Dark+Mode)
+![Dark Mode](<img width="2808" height="1534" alt="image" src="https://github.com/user-attachments/assets/c622a0e9-cc24-455e-83eb-f902d41fe4a0" />
+)
 
-## ✨ Features
+## Features
 
 - **Multiple QR Types**: Wi-Fi, URL, Text, Business Card (vCard)
 - **Modern 3D Design**: Glassmorphism effects with smooth animations
@@ -23,29 +26,15 @@ A modern, responsive web application for generating QR codes with beautiful 3D d
 - **Responsive Design**: Works perfectly on all devices
 - **Client-side Only**: No backend required, works offline
 
-## 🚀 Quick Start
+## Quick Start
 
 1. Clone the repository:
 ```bash
 git clone https://github.com/phucdev/WiFiQR.git
 cd WiFiQR
-```
+open index.html
 
-2. Open `index.html` in your browser or use a local server:
-```bash
-# Using Python
-python -m http.server 8000
-
-# Using Node.js
-npx serve .
-
-# Using PHP
-php -S localhost:8000
-```
-
-3. Visit `http://localhost:8000` in your browser
-
-## 🛠️ Technology Stack
+## Technology Stack
 
 - **HTML5**: Semantic markup
 - **CSS3**: Modern styling with CSS Grid, Flexbox, and animations
@@ -57,7 +46,7 @@ php -S localhost:8000
   - Font Awesome for icons
   - Google Fonts (Inter) for typography
 
-## 📱 Supported QR Types
+## Supported QR Types
 
 ### Wi-Fi QR Code
 Generate QR codes for Wi-Fi networks with:
@@ -78,7 +67,7 @@ Create QR codes with contact information:
 - Email
 - Company
 
-## 🎨 Customization Options
+## Customization Options
 
 - **Colors**: Custom foreground and background colors
 - **Patterns**: Square, dots, rounded styles
@@ -86,7 +75,7 @@ Create QR codes with contact information:
 - **Size**: Adjustable from 200px to 400px
 - **Theme**: Light and dark mode support
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 WiFiQR/
@@ -97,7 +86,7 @@ WiFiQR/
 └── .gitignore          # Git ignore file
 ```
 
-## 🎯 Key Features
+## Key Features
 
 ### Modern UI/UX
 - Glassmorphism design with backdrop blur effects
@@ -117,7 +106,7 @@ WiFiQR/
 - Theme persistence across sessions
 - Mobile-first responsive design
 
-## 🌟 Design Highlights
+## Design Highlights
 
 - **Glassmorphism**: Modern glass-like effects with transparency
 - **3D Elements**: Depth through shadows and gradients
@@ -125,21 +114,21 @@ WiFiQR/
 - **Color Schemes**: Beautiful gradients and theme support
 - **Typography**: Clean, modern Inter font family
 
-## 📱 Responsive Breakpoints
+## Responsive Breakpoints
 
 - **Desktop**: 1024px and above
 - **Tablet**: 768px - 1023px
 - **Mobile**: 480px - 767px
 - **Small Mobile**: Below 480px
 
-## 🔧 Browser Support
+## Browser Support
 
 - Chrome 80+
 - Firefox 75+
 - Safari 13+
 - Edge 80+
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -147,30 +136,27 @@ WiFiQR/
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👨‍💻 Author
+## Author
 
 **Phucdev** - [GitHub](https://github.com/phucdev)
 
 Made with ❤️ by Phucdev
 
-## 🚀 Future Enhancements
+## Future Enhancements
 
-- [ ] QR code scanning functionality
-- [ ] More QR code patterns and styles
-- [ ] Logo/branding overlay options
-- [ ] Batch QR code generation
-- [ ] QR code analytics tracking
-- [ ] Export to SVG format
-- [ ] Social media sharing integration
+QR code scanning functionality
+More QR code patterns and styles
+Logo/branding overlay options
+Batch QR code generation
+QR code analytics tracking
+Export to SVG format
+Social media sharing integration
 
-## 📞 Support
+## Support
 
 If you have any questions or need help, please open an issue on GitHub or contact me directly.
 
----
-
-**Note**: This is a client-side only application. All QR code generation happens in your browser, ensuring privacy and offline functionality.
