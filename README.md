@@ -13,12 +13,6 @@
   [![GitHub forks](https://img.shields.io/github/forks/yourusername/WiFiQR?style=social)](https://github.com/yourusername/WiFiQR/network/members)
   [![GitHub issues](https://img.shields.io/github/issues/yourusername/WiFiQR)](https://github.com/yourusername/WiFiQR/issues)
   [![GitHub license](https://img.shields.io/github/license/yourusername/WiFiQR)](https://github.com/yourusername/WiFiQR/blob/main/LICENSE)
-  
-  <br>
-  <a href="">🌐 Live Demo</a> • 
-  <a href="#features">Features</a> • 
-  <a href="#tech-stack">Tech Stack</a> • 
-  <a href="#getting-started">Quick Start</a>
 </div>
 
 
