@@ -4,16 +4,23 @@
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
   <img src="https://img.shields.io/badge/QR--Code-Generator-00C851?style=for-the-badge&logo=qr-code&logoColor=white" alt="QR Code Generator">
 </div>
-<p align="center">
-  <img src="https://img.shields.io/github/stars/phucdevz/WiFiQR.svg?style=social" alt="Stars">
-  <img src="https://img.shields.io/github/forks/phucdevz/WiFiQR.svg?style=social" alt="Forks">
-  <img src="https://img.shields.io/github/license/phucdevz/WiFiQR" alt="License">
-</p>
 
-<h1 align="center">📶 WiFiQR</h1>
-<p align="center">
-  ⚡ Công cụ web cực nhẹ giúp tạo mã QR Wi-Fi tức thì — chỉ cần nhập SSID và mật khẩu là có thể quét để kết nối ngay lập tức, không cần gõ tay.
-</p>
+<div align="center">
+  <h1> WiFiQR - Ultimate QR Code Generator</h1>
+  <p><strong>Create stunning QR codes with modern 3D design & glassmorphism effects</strong></p>
+  
+  [![GitHub stars](https://img.shields.io/github/stars/yourusername/WiFiQR?style=social)](https://github.com/yourusername/WiFiQR/stargazers)
+  [![GitHub forks](https://img.shields.io/github/forks/yourusername/WiFiQR?style=social)](https://github.com/yourusername/WiFiQR/network/members)
+  [![GitHub issues](https://img.shields.io/github/issues/yourusername/WiFiQR)](https://github.com/yourusername/WiFiQR/issues)
+  [![GitHub license](https://img.shields.io/github/license/yourusername/WiFiQR)](https://github.com/yourusername/WiFiQR/blob/main/LICENSE)
+  
+  <br>
+  <a href="">🌐 Live Demo</a> • 
+  <a href="#features">Features</a> • 
+  <a href="#tech-stack">Tech Stack</a> • 
+  <a href="#getting-started">Quick Start</a>
+</div>
+
 
 ---
 
