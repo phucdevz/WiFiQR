@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiFiQR - Tạo mã QR Wi-Fi hiện đại</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <div class="logo-container">
+                    <div class="wifi-text">
+                        <span class="wifi-icon">
+                            <i class="fas fa-wifi"></i>
+                        </span>
+                        <span class="wifi-letters">WiFi</span>
+                    </div>
+                    <div class="qr-letter">
+                        <span class="qr-text">Q</span>
+                    </div>
+                    <span class="r-letter">R</span>
+                </div>
+            </div>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="form-container">
+                <div class="form-card">
+                    <h2 class="form-title">Tạo mã QR Wi-Fi</h2>
+                    
+                    <!-- QR Type Selection -->
+                    <div class="form-group">
+                        <label for="qrType">Loại mã QR</label>
+                        <div class="qr-type-tabs">
+                            <button class="tab-btn active" data-type="wifi">
+                                <i class="fas fa-wifi"></i>
+                                Wi-Fi
+                            </button>
+                            <button class="tab-btn" data-type="url">
+                                <i class="fas fa-link"></i>
+                                URL
+                            </button>
+                            <button class="tab-btn" data-type="text">
+                                <i class="fas fa-font"></i>
+                                Văn bản
+                            </button>
+                            <button class="tab-btn" data-type="vcard">
+                                <i class="fas fa-address-card"></i>
+                                Card Visit
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- WiFi Form Fields -->
+                    <div class="form-section" id="wifiSection">
+                        <div class="form-group">
+                            <label for="ssid">Tên mạng Wi-Fi (SSID)</label>
+                            <input type="text" id="ssid" placeholder="Nhập tên mạng Wi-Fi" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password">Mật khẩu</label>
+                            <div class="password-input">
+                                <input type="password" id="password" placeholder="Nhập mật khẩu">
+                                <button type="button" class="toggle-password" id="togglePassword">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="encryption">Loại mã hóa</label>
+                            <select id="encryption">
+                                <option value="WPA">WPA/WPA2</option>
+                                <option value="WEP">WEP</option>
+                                <option value="nopass">Không mã hóa</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- URL Form Fields -->
+                    <div class="form-section hidden" id="urlSection">
+                        <div class="form-group">
+                            <label for="url">URL</label>
+                            <input type="url" id="url" placeholder="https://example.com">
+                        </div>
+                    </div>
+
+                    <!-- Text Form Fields -->
+                    <div class="form-section hidden" id="textSection">
+                        <div class="form-group">
+                            <label for="text">Văn bản</label>
+                            <textarea id="text" placeholder="Nhập văn bản bạn muốn mã hóa"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- VCard Form Fields -->
+                    <div class="form-section hidden" id="vcardSection">
+                        <div class="form-group">
+                            <label for="vcardName">Họ tên</label>
+                            <input type="text" id="vcardName" placeholder="Nguyễn Văn A">
+                        </div>
+                        <div class="form-group">
+                            <label for="vcardPhone">Số điện thoại</label>
+                            <input type="tel" id="vcardPhone" placeholder="0123456789">
+                        </div>
+                        <div class="form-group">
+                            <label for="vcardEmail">Email</label>
+                            <input type="email" id="vcardEmail" placeholder="example@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="vcardCompany">Công ty</label>
+                            <input type="text" id="vcardCompany" placeholder="Tên công ty">
+                        </div>
+                    </div>
+
+                    <!-- QR Customization -->
+                    <div class="customization-section">
+                        <h3>Tùy chỉnh QR</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="foregroundColor">Màu QR</label>
+                                <input type="color" id="foregroundColor" value="#000000">
+                            </div>
+                            <div class="form-group">
+                                <label for="backgroundColor">Màu nền</label>
+                                <input type="color" id="backgroundColor" value="#FFFFFF">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="qrStyle">Kiểu QR</label>
+                                <select id="qrStyle">
+                                    <option value="squares">Hình vuông</option>
+                                    <option value="dots">Chấm tròn</option>
+                                    <option value="rounded">Bo góc</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="eyeStyle">Kiểu mắt QR</label>
+                                <select id="eyeStyle">
+                                    <option value="square">Hình vuông</option>
+                                    <option value="circle">Hình tròn</option>
+                                    <option value="rounded">Bo góc</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="qrSize">Kích thước QR</label>
+                            <input type="range" id="qrSize" min="200" max="400" value="300" class="slider">
+                            <span class="size-value">300px</span>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="action-buttons">
+                        <button class="btn btn-primary" id="generateBtn">
+                            <i class="fas fa-qrcode"></i>
+                            Tạo mã QR
+                        </button>
+                        <button class="btn btn-secondary" id="downloadBtn" disabled>
+                            <i class="fas fa-download"></i>
+                            Tải xuống
+                        </button>
+                    </div>
+                </div>
+
+                <!-- QR Display -->
+                <div class="qr-display" id="qrDisplay">
+                    <div class="qr-placeholder">
+                        <i class="fas fa-qrcode"></i>
+                        <p>Mã QR sẽ xuất hiện ở đây</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Made with ❤️ by <a href="https://github.com/phucdev" target="_blank">Phucdev</a></p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.6.0-rc.1/lib/qr-code-styling.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
