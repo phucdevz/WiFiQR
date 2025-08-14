@@ -1,199 +1,176 @@
-# WiFiQR - Ứng dụng tạo mã QR Wi-Fi hiện đại
+# WiFiQR - QR Code Generator
 
-![WiFiQR](https://img.shields.io/badge/WiFiQR-3D%20Modern-blue?style=for-the-badge&logo=wifi)
-![Responsive](https://img.shields.io/badge/Responsive-Mobile%20First-green?style=for-the-badge)
-![Dark Mode](https://img.shields.io/badge/Dark%20Mode-Supported-purple?style=for-the-badge)
+A modern, responsive web application for generating QR codes with beautiful 3D design and extensive customization options.
 
-Ứng dụng web WiFiQR cho phép tạo mã QR Wi-Fi ngay lập tức với giao diện 3D hiện đại, hỗ trợ nhiều loại QR và tùy chỉnh đa dạng.
+## 📸 Project Images
 
-## ✨ Tính năng chính
+### Desktop View
+![Desktop View](https://via.placeholder.com/800x500/667eea/ffffff?text=WiFiQR+Desktop+View)
 
-### 🎨 Giao diện hiện đại
-- **Thiết kế 3D/Glassmorphism**: Hiệu ứng trong suốt, bóng đổ và gradient đẹp mắt
-- **Responsive**: Tối ưu cho mọi thiết bị (mobile-first)
-- **Dark/Light Mode**: Chuyển đổi theme tự động với localStorage
-- **Animation mượt mà**: Hiệu ứng chuyển động và hover đẹp mắt
+### Mobile View
+![Mobile View](https://via.placeholder.com/400x700/667eea/ffffff?text=WiFiQR+Mobile+View)
 
-### 📱 Loại QR được hỗ trợ
-- **Wi-Fi QR**: Tạo mã QR kết nối Wi-Fi tự động
-- **URL QR**: Mã QR chứa đường link
-- **Text QR**: Mã QR chứa văn bản
-- **vCard QR**: Mã QR thông tin liên hệ
+### Dark Mode
+![Dark Mode](https://via.placeholder.com/800x500/1e293b/ffffff?text=WiFiQR+Dark+Mode)
 
-### 🎯 Tùy chỉnh nâng cao
-- **Màu sắc**: Tùy chỉnh màu QR và màu nền
-- **Kiểu QR**: Hình vuông, chấm tròn, bo góc
-- **Kiểu mắt QR**: Hình vuông, hình tròn, bo góc
-- **Kích thước**: Điều chỉnh từ 200px đến 400px
+## ✨ Features
 
-### 💾 Tính năng xuất
-- **Download PNG**: Tải xuống với độ phân giải cao
-- **Real-time preview**: Xem trước ngay lập tức
-- **Validation**: Kiểm tra dữ liệu đầu vào
+- **Multiple QR Types**: Wi-Fi, URL, Text, Business Card (vCard)
+- **Modern 3D Design**: Glassmorphism effects with smooth animations
+- **Dark/Light Mode**: Toggle between themes with persistent storage
+- **Real-time Customization**: Colors, styles, patterns, and sizes
+- **High-quality Downloads**: PNG format with customizable resolution
+- **Responsive Design**: Works perfectly on all devices
+- **Client-side Only**: No backend required, works offline
 
-## 🚀 Cách sử dụng
+## 🚀 Quick Start
 
-### 1. Tạo mã QR Wi-Fi
-1. Chọn tab **Wi-Fi**
-2. Nhập tên mạng Wi-Fi (SSID)
-3. Nhập mật khẩu (có thể ẩn/hiện)
-4. Chọn loại mã hóa (WPA/WPA2, WEP, hoặc không mã hóa)
-5. Tùy chỉnh màu sắc và kiểu QR
-6. Nhấn **Tạo mã QR**
-
-### 2. Tạo mã QR URL
-1. Chọn tab **URL**
-2. Nhập URL hợp lệ (ví dụ: https://example.com)
-3. Tùy chỉnh theo ý muốn
-4. Nhấn **Tạo mã QR**
-
-### 3. Tạo mã QR văn bản
-1. Chọn tab **Văn bản**
-2. Nhập nội dung văn bản
-3. Tùy chỉnh và tạo QR
-
-### 4. Tạo mã QR thông tin liên hệ
-1. Chọn tab **Card Visit**
-2. Nhập thông tin: họ tên, số điện thoại, email, công ty
-3. Tạo mã QR vCard
-
-## 🛠️ Công nghệ sử dụng
-
-- **HTML5**: Cấu trúc semantic
-- **CSS3**: 
-  - CSS Variables cho theming
-  - Flexbox & Grid layout
-  - Animations & Transitions
-  - Glassmorphism effects
-- **JavaScript (ES6+)**:
-  - Classes & Modules
-  - Async/Await
-  - Event handling
-- **Thư viện bên ngoài**:
-  - [QRCode.js](https://github.com/davidshimjs/qrcode) - Tạo QR cơ bản
-  - [QR Code Styling](https://github.com/kozakdenys/qr-code-styling) - Tùy chỉnh QR nâng cao
-  - [Font Awesome](https://fontawesome.com/) - Icons
-  - [Google Fonts (Inter)](https://fonts.google.com/specimen/Inter) - Typography
-
-## 📁 Cấu trúc dự án
-
-```
-WiFiQR/
-├── index.html          # File HTML chính
-├── styles.css          # CSS với thiết kế 3D
-├── script.js           # JavaScript logic
-└── README.md           # Hướng dẫn sử dụng
-```
-
-## 🎨 Thiết kế
-
-### Color Palette
-- **Light Theme**: 
-  - Primary: #3b82f6 (Blue)
-  - Secondary: #6366f1 (Indigo)
-  - Background: #f8fafc (Slate)
-- **Dark Theme**:
-  - Primary: #60a5fa (Light Blue)
-  - Secondary: #818cf8 (Light Indigo)
-  - Background: #0f172a (Dark Slate)
-
-### Typography
-- **Font**: Inter (Google Fonts)
-- **Weights**: 300, 400, 500, 600, 700
-- **Responsive**: Tự động điều chỉnh kích thước
-
-### Effects
-- **Glassmorphism**: Backdrop blur, transparency
-- **3D Shadows**: Layered shadow system
-- **Gradients**: Linear gradients cho buttons và accents
-- **Hover Effects**: Scale, translate, color transitions
-
-## 📱 Responsive Breakpoints
-
-- **Desktop**: > 1024px (2 cột layout)
-- **Tablet**: 768px - 1024px (1 cột layout)
-- **Mobile**: < 768px (Stacked layout, simplified tabs)
-
-## 🔧 Cài đặt và chạy
-
-### Cách 1: Chạy trực tiếp
-1. Clone repository:
+1. Clone the repository:
 ```bash
 git clone https://github.com/phucdev/WiFiQR.git
 cd WiFiQR
 ```
 
-2. Mở file `index.html` trong trình duyệt
-
-### Cách 2: Sử dụng Live Server (VS Code)
-1. Cài đặt extension "Live Server"
-2. Right-click vào `index.html`
-3. Chọn "Open with Live Server"
-
-### Cách 3: Sử dụng Python HTTP Server
+2. Open `index.html` in your browser or use a local server:
 ```bash
+# Using Python
 python -m http.server 8000
-# Hoặc
-python3 -m http.server 8000
+
+# Using Node.js
+npx serve .
+
+# Using PHP
+php -S localhost:8000
 ```
 
-## 🌟 Tính năng nổi bật
+3. Visit `http://localhost:8000` in your browser
 
-### Validation thông minh
-- Kiểm tra SSID không được để trống
-- Validate URL format
-- Required fields cho vCard
-- Error notifications đẹp mắt
+## 🛠️ Technology Stack
 
-### Performance tối ưu
-- Lazy loading cho QR libraries
-- Debounced real-time updates
-- Efficient DOM manipulation
-- Minimal reflows/repaints
+- **HTML5**: Semantic markup
+- **CSS3**: Modern styling with CSS Grid, Flexbox, and animations
+- **JavaScript (ES6+)**: Vanilla JS with modern features
+- **QR Code Libraries**: 
+  - `qr-code-styling` for advanced customization
+  - `qrcode.js` for core QR generation
+- **External Dependencies**:
+  - Font Awesome for icons
+  - Google Fonts (Inter) for typography
 
-### Accessibility
-- Semantic HTML structure
-- ARIA labels và roles
-- Keyboard navigation support
-- High contrast ratios
+## 📱 Supported QR Types
 
-### Browser Support
+### Wi-Fi QR Code
+Generate QR codes for Wi-Fi networks with:
+- SSID (Network name)
+- Password
+- Encryption type (WPA/WPA2, WEP, None)
+
+### URL QR Code
+Create QR codes that link to websites with URL validation.
+
+### Text QR Code
+Generate QR codes containing any text content.
+
+### Business Card (vCard)
+Create QR codes with contact information:
+- Name
+- Phone number
+- Email
+- Company
+
+## 🎨 Customization Options
+
+- **Colors**: Custom foreground and background colors
+- **Patterns**: Square, dots, rounded styles
+- **Eye Styles**: Square, circle, rounded corner patterns
+- **Size**: Adjustable from 200px to 400px
+- **Theme**: Light and dark mode support
+
+## 📁 Project Structure
+
+```
+WiFiQR/
+├── index.html          # Main HTML file
+├── styles.css          # All CSS styles
+├── script.js           # JavaScript functionality
+├── README.md           # Project documentation
+└── .gitignore          # Git ignore file
+```
+
+## 🎯 Key Features
+
+### Modern UI/UX
+- Glassmorphism design with backdrop blur effects
+- Smooth animations and transitions
+- 3D hover effects and shadows
+- Responsive grid layout
+
+### QR Code Generation
+- Real-time preview
+- Multiple format support
+- High-quality output
+- Instant download capability
+
+### User Experience
+- Form validation with helpful error messages
+- Loading states and success animations
+- Theme persistence across sessions
+- Mobile-first responsive design
+
+## 🌟 Design Highlights
+
+- **Glassmorphism**: Modern glass-like effects with transparency
+- **3D Elements**: Depth through shadows and gradients
+- **Smooth Animations**: CSS transitions and keyframe animations
+- **Color Schemes**: Beautiful gradients and theme support
+- **Typography**: Clean, modern Inter font family
+
+## 📱 Responsive Breakpoints
+
+- **Desktop**: 1024px and above
+- **Tablet**: 768px - 1023px
+- **Mobile**: 480px - 767px
+- **Small Mobile**: Below 480px
+
+## 🔧 Browser Support
+
 - Chrome 80+
 - Firefox 75+
 - Safari 13+
 - Edge 80+
 
-## 🎯 Roadmap
+## 🤝 Contributing
 
-- [ ] Thêm logo upload cho QR
-- [ ] Hỗ trợ QR với logo ở giữa
-- [ ] Export SVG format
-- [ ] QR code scanning
-- [ ] History lưu các QR đã tạo
-- [ ] Share QR qua social media
-- [ ] PWA support
-- [ ] Offline mode
-
-## 🤝 Đóng góp
-
-Mọi đóng góp đều được chào đón! Vui lòng:
-
-1. Fork repository
-2. Tạo feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Tạo Pull Request
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ## 📄 License
 
-Dự án này được phân phối dưới MIT License. Xem file `LICENSE` để biết thêm chi tiết.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👨‍💻 Tác giả
+## 👨‍💻 Author
 
 **Phucdev** - [GitHub](https://github.com/phucdev)
 
 Made with ❤️ by Phucdev
 
+## 🚀 Future Enhancements
+
+- [ ] QR code scanning functionality
+- [ ] More QR code patterns and styles
+- [ ] Logo/branding overlay options
+- [ ] Batch QR code generation
+- [ ] QR code analytics tracking
+- [ ] Export to SVG format
+- [ ] Social media sharing integration
+
+## 📞 Support
+
+If you have any questions or need help, please open an issue on GitHub or contact me directly.
+
 ---
 
-⭐ Nếu dự án này hữu ích, hãy cho một star nhé!
+**Note**: This is a client-side only application. All QR code generation happens in your browser, ensuring privacy and offline functionality.
